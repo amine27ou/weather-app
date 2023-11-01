@@ -1,0 +1,61 @@
+
+
+.app {
+  font-family: sans-serif;
+  text-align: center;
+}
+* {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.container{
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7)),url('./cold-bg.jpg');
+  background-position: center;
+  height: 100vh;
+  background-size: cover;
+  transition: all .4s;
+
+}
+.container.warm{
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7)),url('./warm-bg.jpg');
+  background-position: center;
+  height: 100vh;
+  background-size: cover;
+
+}
+.input-wrapper input{
+  padding: 3px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+
+}
+.input-wrapper{
+  padding: 20px;
+}
+.temp{
+  background-color: rgba(0, 0, 0, 0.098);
+  padding:30px;
+  width: 80px;
+  color: white;
+  text-shadow: 0 3px  0px grey;
+  border-radius: 8px;
+  font-size: 3rem;
+}
+.result{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.state{
+  text-shadow: 0 3px  0px grey;
+  color: white;
+  font-size: 2rem;
+}
+.date,
+.city
+{
+  margin: 10px 0;
+}
